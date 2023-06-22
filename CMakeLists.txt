@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
 
 project(pybindCmake)
-SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -fPIC")
+#SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -fPIC")
 add_subdirectory(thirdparty)
+add_subdirectory(src)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # set(PYBIND_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/pybind11/include)
