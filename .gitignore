@@ -3,4 +3,5 @@ build
 *.swp
 *.swo
 *log
+*.orig
 compile_commands.json
