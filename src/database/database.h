@@ -1,6 +1,8 @@
 #pragma once
 
+#include <istream>
 #include <string>
+#include <iostream>
 
 namespace database {
 
@@ -37,6 +39,7 @@ class LightCone {
     // Init without level
     LightCone(std::string& name, std::string& cn_name, statv_t base_ATK,
               statv_t base_DEF, statv_t base_HP);
+    LightCone();
 
     // We set ascend as biggest as possible for current level.
     void set_level(level_t level);
@@ -44,6 +47,8 @@ class LightCone {
     void set_ascend(level_t ascend);
 
 };
+
+extern LightCone empty_light_cone;
 
 class Character {
   private:
@@ -64,6 +69,8 @@ class Character {
     void set_level(level_t level);
     // This function should be used only on gap level.
     void set_ascend(level_t ascend);
+    
+    void print(std::ostream& o = std::cout);
 };
 
 
