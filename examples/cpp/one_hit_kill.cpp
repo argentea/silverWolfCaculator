@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    const char tool_name[] = "actual_hp";
+    const char tool_name[] = "one_hit_kill";
     cout << "Call " << tool_name << endl;
 
     using namespace database;
